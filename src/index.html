@@ -1,11 +1,83 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tailwindcss projects</title>
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body>
-    <h1 class="bg-amber-300">hwll tailwind</h1>
+  <body class="h-screen">
+    <!-- navbar -->
+    <nav class="flex items-center justify-between bg-indigo-300 p-2">
+      <div class="text-indigo-900 font-bold">LOGO</div>
+      <ul class="hidden md:flex space-x-4 text-black">
+        <li>Home</li>
+        <li>About US</li>
+        <li>Contact US</li>
+      </ul>
+      <button
+        class="hidden md:block bg-indigo-900 text-white font-bold py-2 px-4 rounded"
+      >
+        login
+      </button>
+      <div class="md:hidden">
+        <a class="text-4xl" href="">&#8801;</a>
+      </div>
+    </nav>
+
+    <!-- hero section -->
+
+    <header class="w-full h-auto">
+      <img
+        class="w-full h-full hidden md:block"
+        src="/src/image/pw2.jpg"
+        alt=""
+      />
+
+      <img
+        class="w-full md:hidden"
+        src="https://cdn.pwskills.com/assets/uploads/banners/63a18cca807628f5968f528a/mobile.jpg"
+        alt=""
+      />
+    </header>
+
+    <!-- main section -->
+    <div
+      class="flex flex-col h-auto w-full flex-wrap items-center bg-indigo-950"
+    >
+      <div class="text-indigo-200 font-bold text-3xl md:text-4xl text-center">
+        Pure Hardwork, No Shortcuts
+      </div>
+      <div
+        class="w-36 h-1 border-b-4 border-yellow-600 mt-2 rounded-2xl md:mt-4 mb-12"
+      ></div>
+      <div class="w-full flex flex-wrap justify-evenly">
+        <div class="flex flex-col w-46 items-center mb-12">
+          <img
+            class="rounded-full w-20 h-20"
+            src="/src/image/books.png"
+            alt=""
+          />
+          <p class="text-white text-2xl font-bold">600+</p>
+          <p class="text-gray-700 font-bold">Different Courses</p>
+        </div>
+        <div class="flex flex-col w-46 items-center mb-12">
+          <img
+            class="rounded-full w-20 h-20"
+            src="/src/image/transition.jpg"
+            alt=""
+          />
+          <p class="text-white text-2xl font-bold">600+</p>
+          <p class="text-gray-700 font-bold">Different Courses</p>
+        </div>
+        <div class="flex flex-col w-46 items-center mb-12">
+          <img
+            class="rounded-full w-20 h-20"
+            src="/src/image/STUDENT.jpg"
+            alt=""
+          />
+          <p class="text-white text-2xl font-bold">600+</p>
+          <p class="text-gray-700 font-bold">Different Courses</p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
